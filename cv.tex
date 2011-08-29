@@ -1,0 +1,78 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec}
+
+% Set up fonts
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{Linux Libertine O}
+\setmonofont[Scale=0.8]{Monaco}
+
+% Layout
+\usepackage{geometry}
+%%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% Links
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+
+% Margin
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% Headings
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+% PDF information
+\usepackage[
+bookmarks, colorlinks, breaklinks,
+pdftitle={Jeremiah Via - vita},
+pdfauthor={Jeremiah Via},
+pdfproducer={http://jeremiahvia.com}
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
+
+
+%% ------------------------------------------------------------------%%
+%% Document                                                          %%
+%% ------------------------------------------------------------------%%
+\begin{document}
+
+%% ------------------------------------------------------------------%%
+%% Heading                                                           %%
+%% ------------------------------------------------------------------%%
+{\LARGE Jeremiah M. Via} \\[1cm]
+
+\begin{minipage}[t]{0.6\textwidth}
+  571 Bristol Road\\
+  Birmingham, B29 6AF\\
+  United Kingdom\\ [.2cm]
+\end{minipage}
+
+\begin{minipage}[t]{0.4\textwidth}
+  Telephone: \texttt{+44-(0)-795-607-7116}\\
+  Email: \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\
+  \textsc{url}: \href{http://jeremiahvia.com}{http://jeremiahvia.com}
+\end{minipage}
+
+
+
+
+
+
+
+\end{document}
