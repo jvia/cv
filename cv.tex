@@ -13,11 +13,12 @@
 \setmonofont[Scale=0.8]{Monaco}
 
 % Layout
-\usepackage{geometry}
+\usepackage[xetex]{geometry}
 \geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
 % Links
+\chardef\&="E050
 \newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
 \newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
 \newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
@@ -39,7 +40,7 @@
 
 % PDF information
 \usepackage[
-bookmarks, colorlinks, breaklinks,
+bookmarks, colorlinks, breaklinks, unicode,
 pdftitle={Jeremiah Via - vita},
 pdfauthor={Jeremiah Via},
 pdfproducer={http://jeremiahvia.com}
@@ -57,8 +58,8 @@ pdfproducer={http://jeremiahvia.com}
 %% ------------------------------------------------------------------%%
 {\LARGE Jeremiah M. Via}\\[1cm]
 \begin{minipage}[t]{0.55\textwidth}
-  571 Bristol Road\\
-  Birmingham, B29 6AF\\
+  \texttt{571} Bristol Road\\
+  Birmingham, \texttt{B29 6AF}\\
   United Kingdom
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
@@ -76,31 +77,33 @@ pdfproducer={http://jeremiahvia.com}
 \years{2012}
 \textmd{BSc in Artificial Intelligence \& Computer Science}\\
 \textit{University of Birmingham}, United Kingdom\\[.2cm]
-
 \years{2009}
+
 \textmd{AS in Computer Programming}\\
 \textit{Grossmont College}, USA
-
 
 %% ------------------------------------------------------------------%%
 %% Appointments                                                      %%
 %% ------------------------------------------------------------------%%
 \section*{Appointments Held}
 
-% \subsection*{Research}
-% \years{2011}
-% \textbf{Research Institute for Cognition and Robotics}\\
-% Summer Research Intern, Universität Bielefeld\\[.2cm]
+\subsection*{Research}
+\years{2011}
+\textmd{Research Institute for Cognition and Robotics}\\
+Summer Research Intern, Universität Bielefeld\\[.2cm]
+\textmd{Intelligent Robotics Lab}\\
+Summer Research Intern, University of Birmingham
 
-% \textbf{Intelligent Robotics Lab}\\
-% Summer Research Intern, University of Birmingham\\
-
-% \subsection*{Teaching}
+\subsection*{Teaching}
+\years{2012}
+\textmd{University of Birmingham}\\
+Teaching Assistant\\
+Robot Programming
 
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
 %% ------------------------------------------------------------------%%
-\section*{Grants \& Awards}
+%%\section*{Grants \& Awards}
 % \years{2011}
 % Ede \& Ravenscroft Travel Bursary\\
 % Student Development Scholarship\\
