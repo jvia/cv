@@ -37,6 +37,7 @@
 \sectionfont{\mdseries\upshape\Large}
 \subsectionfont{\mdseries\scshape\normalsize}
 \subsubsectionfont{\mdseries\upshape\large}
+\renewcommand*\thesubsection{\arabic{subsection}.}
 
 % PDF information
 \usepackage[
@@ -63,7 +64,7 @@ pdfproducer={http://jeremiahvia.com}
   United Kingdom
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
-  Telephone: \texttt{+44-(0)-795-607-7116}\\
+  Telephone: \texttt{+44 795-607-7116}\\
   Email: \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\
   \textsc{url}: \href{http://jeremiahvia.com}{http://jeremiahvia.com}
 \end{minipage}
@@ -75,26 +76,54 @@ pdfproducer={http://jeremiahvia.com}
 \section*{Education}
 
 \years{2012}
-\textmd{BSc in Artificial Intelligence \& Computer Science}\\
-\textit{University of Birmingham}, United Kingdom\\[.2cm]
-\years{2009}
+\textbf{BSc in Artificial Intelligence \& Computer Science} (First Class Honours)\\
+\textsl{University of Birmingham}, United Kingdom\\
+\small{\textsc{Advisors:} Nick Hawes; Jeremy Wyatt}\\[.2cm]
+Key classes:
+\begin{itemize}
+\item \textbf{machine learning}: q-learning, probabilistic latent
+  semantic analysis, independent component analysis, decision tree
+  learning, k-nearest neighbors, case-based reasoning, support vector
+  machines
+\item \textbf{natural computation}: game theory, cellular automta, ant
+  colony optimization, random walks, evolutionary algorithms,
+  market-based control, self-orgsnizing maps, particle swarm
+  optimization
+\item \textbf{natural language processing}: morphological analysis,
+  pos tagging, DCG parsing, active chart parsing, recursive transition
+  networks, quasi-logical forms
+\item \textbf{computer vision}: edge detection, noise filtering, hough
+  transform, eigenfaces, object recognition, feature detection
+\item \textbf{intelligent robotics}: control theory, markov decision
+  processes, behavior-based control
+\item \textbf{intelligent data analysis}: principle component
+  analysis, self-organizing maps, model-based data clustering, latent
+  semantic indexing, PageRank
+\item \textbf{neural computation}: hebbian learning, gradient descent
+  learning, back-propagation, conjugate gradient learning, recurrent
+  neural networks, radial basis function networks, self organizing
+  maps, learning vector quantization, committee machines, mixture
+  models
+\end{itemize}
+\vspace{.25cm}
 
-\textmd{AS in Computer Programming}\\
-\textit{Grossmont College}, USA
+\years{2009}
+\textbf{AS in Computer Programming} (3.83 GPA)\\
+\textit{Grossmont College}, USA\\[.2cm]
+Emphasis on Java, C++, x86, and softwware engineering
 
 %% ------------------------------------------------------------------%%
 %% Appointments                                                      %%
 %% ------------------------------------------------------------------%%
 \section*{Appointments Held}
-
-\subsection*{Research}
+\subsection{Research}
 \years{2011}
 \textmd{Research Institute for Cognition and Robotics}\\
 Summer Research Intern, Universität Bielefeld\\[.2cm]
 \textmd{Intelligent Robotics Lab}\\
 Summer Research Intern, University of Birmingham
 
-\subsection*{Teaching}
+\subsection{Teaching}
 \years{2012}
 \textmd{University of Birmingham}\\
 Teaching Assistant\\
@@ -103,25 +132,79 @@ Robot Programming
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
 %% ------------------------------------------------------------------%%
-%%\section*{Grants \& Awards}
-% \years{2011}
-% Ede \& Ravenscroft Travel Bursary\\
-% Student Development Scholarship\\
-% Nuffield Foundation Science Bursary\\
+\section*{Grants \& Awards}
+\years{2011}
+Ede \& Ravenscroft Travel Bursary\\
+Student Development Scholarship\\
+Nuffield Foundation Science Bursary\\
 
-% \years{2010}
-% British Computing Society Tammal Hussein Memorial Prize\\
-% School of Computer Science Excellency Scholarship\\
+\years{2010}
+British Computing Society Tammal Hussein Memorial Prize\\
+School of Computer Science Excellency Scholarship\\
 
-% \years{2009}
-% School of Computer Science Excellency Scholarship\\
-% Best First Year Computer Science Student\\
+\years{2009}
+School of Computer Science Excellency Scholarship\\
+Best First Year Computer Science Student\\
+President's List (4.0 GPA)\\
+
+\years{2008}
+Vice-President's List (3.5 GPA)\\
+Vice-President's List (3.5 GPA)\\
+
+\years{2007}
+Vice-President's List (3.5 GPA)
+
+%% ------------------------------------------------------------------%%
+%% Activities                                                        %%
+%% ------------------------------------------------------------------%%
+\section*{Activities}
+Vice-Chancellor Seminar Series\\
+Birmingham Autonomous Robot Club
+
+
+%% ------------------------------------------------------------------%%
+%% IT & Programming Skills                                           %%
+%% ------------------------------------------------------------------%%
+\section*{IT \& Programming Skills}
+Programming languages (Java, Common Lisp, Prolog, C/C++).\\
+Scripting languages (Python, shell).\\
+Markup languages (HTML, CSS, XML, XSD, JSON).\\
+Qery languages (SQL).\\
+Data analysis (Matlab).\\
+Revision control (Git, Subversion).\\
+Digital typesetting (\TeX, \LaTeX, \XeTeX).
+
+%% ------------------------------------------------------------------%%
+%% Languages                                                         %%
+%% ------------------------------------------------------------------%%
+\section*{Languages}
+\textit{English} (native speaker)\\
+\textit{Spanish} (conversational fluency)
+
+%% ------------------------------------------------------------------%%
+%% Publications                                                      %%
+%% ------------------------------------------------------------------%%
+%%\section*{Publications}
+%%\setcounter{subsection}{0}
+%%\subsection{Journal Articles}
+%%\subsection{Edited Volumes}
+%%\subsection{Book Chapters}
+%%\subsection{Peer-reviewed conference papers}
+%%\subsection{Peer-reviewed conference posters}
+%%\subsection{Unpublished Works}
+%%\subsection{Reports \& white papers}
+
+%% ------------------------------------------------------------------%%
+%% Recent Invited Talks                                              %%
+%% ------------------------------------------------------------------%%
+%%\section*{Recent Invited Talks}
+
+
 
 %% ------------------------------------------------------------------%%
 %% Creative Commons Attribution                                      %%
 %% ------------------------------------------------------------------%%
-
-\vspace{1cm}
+%% \vspace{1cm}
 \vfill{}
 % \hrulefill
 \begin{center}
@@ -130,6 +213,6 @@ Robot Programming
     Typeset in \href{http://nitens.org/taraborelli/cvtex}{
       \fontspec{Times New Roman}\XeTeX }\\
     % ---- FILL IN THE FULL URL TO YOUR CV HERE
-    \href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+    \href{http://jeremiahvia.com/cv/cv.pdf}{http://jeremiahvia.com/cv}}
 \end{center}
 \end{document}
