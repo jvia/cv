@@ -2,3 +2,5 @@
 *.log
 *.out
 cv_libertine.tex
+*.xdv
+.DS_Store
