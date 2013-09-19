@@ -4,7 +4,7 @@
 \usepackage{fontspec}
 \usepackage{bbding}
 \usepackage{graphicx}
-
+\usepackage{nopageno}
 \newcommand*\globe{\includegraphics[height=1.6ex]{globe.pdf}}
 \newcommand*\github{\includegraphics[height=2ex]{github.pdf}}
 
@@ -18,7 +18,7 @@
 
 % Layout
 \usepackage[xetex]{geometry}
-\geometry{textwidth=5.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\geometry{textwidth=6in, textheight=9.5in, marginparsep=7pt, marginparwidth=.5in}
 \setlength\parindent{0in}
 \usepackage{setspace}
 \singlespacing
@@ -84,14 +84,6 @@ pdfproducer={http://jeremiahvia.com}
   \end{tabular}
 \end{minipage}
 
-
-%% ------------------------------------------------------------------%%
-%% Area of Specialization & Competence                               %%
-%% ------------------------------------------------------------------%%
-%% Areas of specialization
-%% Areas of competence
-\section*{Objective}
-
 %% ------------------------------------------------------------------%%
 %% Education                                                         %%
 %% ------------------------------------------------------------------%%
@@ -99,11 +91,11 @@ pdfproducer={http://jeremiahvia.com}
 
 \years{2012--2014}
 \textbf{MSc in Computer Science \& Cognitive Science} (expected)\\
-\textsl{Tufts University}, USA\\
+\textsl{Tufts University}, USA
 
 \years{2009--2012}
-\textbf{BSc in Artificial Intelligence \& Computer Science}, First Class Honours \\
-\textsl{University of Birmingham}, United Kingdom\\
+\textbf{BSc in Artificial Intelligence \& Computer Science}, First Class Honours\\
+\textsl{University of Birmingham}, United Kingdom
 
 \years{2007--2009}
 \textbf{AS in Computer Programming} (3.83 GPA)\\
@@ -114,13 +106,14 @@ pdfproducer={http://jeremiahvia.com}
 %% ------------------------------------------------------------------%%
 \section*{Work Experience}
 \years{2012--2013}
-\textbf{Research Assistant}, \textsl{Human Robot Interaction Lab, Tufts University}
+\textbf{Graduate Research Assistant}, \textsl{Human Robot Interaction Lab, Tufts University}
 \begin{itemize*}
 \item Developed code in Clojure to automatically generated software
   components to allow bidirectional communication between the ROS and
   ADE middlewares
 \item Improved low-level feature extractor by enabling introspection on its current context
 \item Developing architecture wide fault-tolerant mechanisms
+\item Deployed code to run on actual robots
 \item Lead developer on the Willow Garage PR2 and the VGo telepresence robots
 \item Part of a team to develop learning by demonstration on a robot
 \end{itemize*}
@@ -136,98 +129,40 @@ pdfproducer={http://jeremiahvia.com}
 \textbf{Research Assistant}, \textsl{Research Institute for Cognition and Robotics, Universität Bielefeld}
 \begin{itemize*}
 \item Extended a data-driven fault detection system to work on the CAST robotics middleware
-\item Modified learned model and algorithm to become more space and time efficient without loss in fault detection power
+\item Modified learning model and algorithm to become more space and time efficient without loss in fault detection power
 \end{itemize*}
 
 %% ------------------------------------------------------------------%%
 %% Technical Skills                                                  %%
 %% ------------------------------------------------------------------%%
 \section*{Technical Skills}
-I have a good understanding of the theory behind data structures,
-algorithms and architecture, as well as OOP principles. I proved this
-at Bloomberg when architecting a large-scale distributed system from
-scratch.  I am most proficient in Java, although I use a variety of
-languages and often switch to the language most appropriate for the
-task, learning a new one if necessary. I have done this when
-developing stand-alone, server and web applications at university, in
-my own projects and while working at Bloomberg and IBM.
-
-\begin{minipage}[t]{0.15\textwidth}
-  \subsection*{\textbf{Experienced}}
-  \begin{center}
-    Java \\
-    C \\
-    Clojure \\
-    Prolog \\
-    Bash
-  \end{center}
-\end{minipage}
-~\qquad
-\begin{minipage}[t]{0.15\textwidth}
-  \begin{center}        
-    \subsection*{\textbf{Familiar}}
-    Python \\
-    SQL \\
-    Matlab \\
-    Common Lisp
-  \end{center}
-\end{minipage}
-~\qquad
-\begin{minipage}[t]{0.15\textwidth}
-  \begin{center}        
-    \subsection*{\textbf{Tools}}
-    Emacs \\
-    Git \\
-    Subversion \\
-    \LaTeX
-  \end{center}
-\end{minipage}
-~\qquad
-\begin{minipage}[t]{0.15\textwidth}
-  \begin{center}        
-    \subsection*{\textbf{Platforms}}
-    Linux/Unix \\
-    Mac OS X \\
-    ROS \\
-    ADE
-  \end{center}
-\end{minipage}    
-
+\begin{itemize*}
+  \item[] \textbf{Languages}: Java, C, Clojure, Prolog, Python
+  \item[] \textbf{Tools}: Emacs, Git, Subversion, \LaTeX
+  \item[] \textbf{Platforms}: Linux/Unix, Mac OS X, ROS, ADE
+\end{itemize*}
+ 
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
 %% ------------------------------------------------------------------%%
 \section*{Awards}
 \years{2012}
 Provost Fellowship, Tufts University\\
-Best Final Year Computer Science Student\\
-Best Research Dissertation\\
-Computer Science Prize\\
+Best Research Dissertation, University of Birmingham\\
 \years{2011}
 Ede \& Ravenscroft Travel Bursary\\
-Student Development Scholarship\\
 Nuffield Foundation Science Bursary\\
-School of Computer Science Excellency Scholarship\\
 \years{2010}
-British Computing Society Tammal Hussein Memorial Prize\\
-School of Computer Science Excellency Scholarship\\
-\years{2009}
-Best First Year Computer Science Student\\
-School of Computer Science Excellency Scholarship
-
-
-
-%% ------------------------------------------------------------------%%
-%% Languages                                                         %%
-%% ------------------------------------------------------------------%%
-\section*{Languages}
-\textit{English} (native speaker)\\
-\textit{Spanish} (conversational fluency)
+British Computing Society Tammal Hussein Memorial Prize
 
 %% ------------------------------------------------------------------%%
 %% Recent Invited Talks                                              %%
 %% ------------------------------------------------------------------%%
 \section*{Interests}
-Powerlifting.
+I genuinely enjoy learning about new technical concepts, particularly
+in robotics and programming. Outside of technology, I enjoy getting
+outside and doing physical activities. I am a competitive powerlifter
+and I enjoy riding bikes.
 
 %% ------------------------------------------------------------------%%
 %% Creative Commons Attribution                                      %%
@@ -242,14 +177,12 @@ Powerlifting.
       % \fontspec{Times New Roman}
       \XeTeX }\\
     % ---- FILL IN THE FULL URL TO YOUR CV HERE
-    \href{http://jeremiahvia.com/cv/cv.pdf}{http://jeremiahvia.com/cv}}
+    \href{http://jeremiahvia.com/cv/resume.pdf}{http://jeremiahvia.com/resume}}
 \end{center}
 \end{document}
 
 %%% Local Variables:
 %%% TeX-engine: xetex
 %%% End:
-% LocalWords:  url BSc Honours Hawes automata pos DCG hough markov
-% LocalWords:  eigenfaces PageRank hebbian quantization Grossmont Ede
-% LocalWords:  unix Universität Bielefeld CoSy Ravenscroft Nuffield
-% LocalWords:  Tammal GMOs Prolog CSS YAML JSON SQL Matlab
+
+%  LocalWords:  VGo telepresence middleware powerlifter
