@@ -14,7 +14,7 @@
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont{Linux Libertine O}
-%\setmonofont[Scale=0.8]{Monaco}
+% \setmonofont[Scale=0.8]{Monaco}
 
 % Layout
 \usepackage[xetex]{geometry}
@@ -45,6 +45,16 @@
 \subsubsectionfont{\mdseries\upshape\large}
 \renewcommand*\thesubsection{\arabic{subsection}.}
 
+% Lists
+\newenvironment{itemize*}{
+  \begin{itemize}
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{-1pt}
+    \setlength{\parsep}{-1pt}
+  }{
+  \end{itemize}
+}
+
 % PDF information
 \usepackage[
 bookmarks, colorlinks, breaklinks, unicode,
@@ -64,15 +74,14 @@ pdfproducer={http://jeremiahvia.com}
 %% Heading                                                           %%
 %% ------------------------------------------------------------------%%
 \begin{minipage}[t]{0.55\textwidth}
-{\LARGE Jeremiah M. Via}
+  {\LARGE Jeremiah M. Via}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
   \begin{tabular}[h]{ll}
-  \Phone{}    & \texttt{(781) 960-5151}\\
-  \Envelope{} & \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\    
-  \github{}   & \href{http://www.github.com/jvia}{github.com/jvia}
+    \Phone{}    & \texttt{(781) 960-5151}\\
+    \Envelope{} & \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\    
+    \github{}   & \href{http://www.github.com/jvia}{github.com/jvia}
   \end{tabular}
-  % \textsc{url}: \href{http://jeremiahvia.com}{http://jeremiahvia.com}
 \end{minipage}
 
 
@@ -81,60 +90,108 @@ pdfproducer={http://jeremiahvia.com}
 %% ------------------------------------------------------------------%%
 %% Areas of specialization
 %% Areas of competence
+\section*{Objective}
 
 %% ------------------------------------------------------------------%%
 %% Education                                                         %%
 %% ------------------------------------------------------------------%%
 \section*{Education}
 
-\years{2013}
+\years{2012--2014}
 \textbf{MSc in Computer Science \& Cognitive Science} (expected)\\
 \textsl{Tufts University}, USA\\
-\small{\textsc{Advisor:} Matthias Scheutz
-\vspace{.15cm}
 
-\years{2012}
-\textbf{BSc in Artificial Intelligence \& Computer Science} (First Class Honours)\\
+\years{2009--2012}
+\textbf{BSc in Artificial Intelligence \& Computer Science}, First Class Honours \\
 \textsl{University of Birmingham}, United Kingdom\\
-\small{\textsc{Dissertation:} A Data-Driven Self-Awareness Model for Robotics Systems}\\
-\small{\textsc{Advisor:} Nick Hawes
-\vspace{.15cm}
 
-\years{2009}
+\years{2007--2009}
 \textbf{AS in Computer Programming} (3.83 GPA)\\
 \textit{Grossmont College}, USA
 
 %% ------------------------------------------------------------------%%
-%% Appointments                                                      %%
+%% Work Experience                                                   %%
 %% ------------------------------------------------------------------%%
 \section*{Work Experience}
 \years{2012--2013}
-\textbf{Tufts University}, \textsl{Human Robot Interaction Lab}
+\textbf{Research Assistant}, \textsl{Human Robot Interaction Lab, Tufts University}
+\begin{itemize*}
+\item Developed code in Clojure to automatically generated software
+  components to allow bidirectional communication between the ROS and
+  ADE middlewares
+\item Improved low-level feature extractor by enabling introspection on its current context
+\item Developing architecture wide fault-tolerant mechanisms
+\item Lead developer on the Willow Garage PR2 and the VGo telepresence robots
+\item Part of a team to develop learning by demonstration on a robot
+\end{itemize*}
 
 \years{2012}
-\textbf{University of Birmingham}, \textsl{Robot Programming}\\
-Teaching Assistant
+\textbf{Teaching Assistant}, \textsl{Robot Programming, University of Birmingham}
+\begin{itemize*}
+\item Explained concepts to help students develop localization and navigation algorithms
+\item Showed students how to debug remote and low-level hardware
+\end{itemize*}
 
 \years{2011}
-\textbf{Universität Bielefeld}, \textsl{Research Institute for Cognition and Robotics}\\
-Summer Research Intern\\
-Incorporated a data-driven fault-detection algorithm into the CoSy
-Architecture Schema Toolkit (CAST).
+\textbf{Research Assistant}, \textsl{Research Institute for Cognition and Robotics, Universität Bielefeld}
+\begin{itemize*}
+\item Extended a data-driven fault detection system to work on the CAST robotics middleware
+\item Modified learned model and algorithm to become more space and time efficient without loss in fault detection power
+\end{itemize*}
 
 %% ------------------------------------------------------------------%%
-%% IT & Programming Skills                                           %%
+%% Technical Skills                                                  %%
 %% ------------------------------------------------------------------%%
-\section*{IT \& Programming Skills}
+\section*{Technical Skills}
+I have a good understanding of the theory behind data structures,
+algorithms and architecture, as well as OOP principles. I proved this
+at Bloomberg when architecting a large-scale distributed system from
+scratch.  I am most proficient in Java, although I use a variety of
+languages and often switch to the language most appropriate for the
+task, learning a new one if necessary. I have done this when
+developing stand-alone, server and web applications at university, in
+my own projects and while working at Bloomberg and IBM.
 
-
-
-Programming languages (Java, Common Lisp, Prolog, C/C++).\\
-Scripting languages (Python, shell).\\
-Markup languages (HTML, CSS, XML, YAML, JSON).\\
-Query languages (SQL).\\
-Data analysis (Matlab).\\
-Revision control (Git, Subversion).\\
-Digital typesetting (\TeX, \LaTeX, \XeTeX).
+\begin{minipage}[t]{0.15\textwidth}
+  \subsection*{\textbf{Experienced}}
+  \begin{center}
+    Java \\
+    C \\
+    Clojure \\
+    Prolog \\
+    Bash
+  \end{center}
+\end{minipage}
+~\qquad
+\begin{minipage}[t]{0.15\textwidth}
+  \begin{center}        
+    \subsection*{\textbf{Familiar}}
+    Python \\
+    SQL \\
+    Matlab \\
+    Common Lisp
+  \end{center}
+\end{minipage}
+~\qquad
+\begin{minipage}[t]{0.15\textwidth}
+  \begin{center}        
+    \subsection*{\textbf{Tools}}
+    Emacs \\
+    Git \\
+    Subversion \\
+    \LaTeX
+  \end{center}
+\end{minipage}
+~\qquad
+\begin{minipage}[t]{0.15\textwidth}
+  \begin{center}        
+    \subsection*{\textbf{Platforms}}
+    Linux/Unix \\
+    Mac OS X \\
+    ROS \\
+    ADE
+  \end{center}
+\end{minipage}    
 
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
@@ -170,7 +227,7 @@ School of Computer Science Excellency Scholarship
 %% Recent Invited Talks                                              %%
 %% ------------------------------------------------------------------%%
 \section*{Interests}
-
+Powerlifting.
 
 %% ------------------------------------------------------------------%%
 %% Creative Commons Attribution                                      %%
