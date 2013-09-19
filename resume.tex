@@ -2,19 +2,26 @@
 % !TEX encoding = UTF-8 Unicode
 \documentclass[10pt, letter]{article}
 \usepackage{fontspec}
+\usepackage{bbding}
+\usepackage{graphicx}
+
+\newcommand*\globe{\includegraphics[height=1.6ex]{globe.pdf}}
+\newcommand*\github{\includegraphics[height=2ex]{github.pdf}}
 
 % Set up fonts
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{xunicode}
 \usepackage{xltxtra}
 \defaultfontfeatures{Mapping=tex-text}
-%\setromanfont{Linux Libertine O}
+\setromanfont{Linux Libertine O}
 %\setmonofont[Scale=0.8]{Monaco}
 
 % Layout
 \usepackage[xetex]{geometry}
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\geometry{textwidth=5.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
+\usepackage{setspace}
+\singlespacing
 
 % Links
 \chardef\&="E050
@@ -41,7 +48,7 @@
 % PDF information
 \usepackage[
 bookmarks, colorlinks, breaklinks, unicode,
-pdftitle={Jeremiah Via - vita},
+pdftitle={Jeremiah Via - Resume},
 pdfauthor={Jeremiah Via},
 pdfproducer={http://jeremiahvia.com}
 ]{hyperref}
@@ -56,14 +63,15 @@ pdfproducer={http://jeremiahvia.com}
 %% ------------------------------------------------------------------%%
 %% Heading                                                           %%
 %% ------------------------------------------------------------------%%
-{\LARGE Jeremiah M. Via}\\[1cm]
 \begin{minipage}[t]{0.55\textwidth}
-  \texttt{79} Lyman Avenue\\
-  Medford, MA, \texttt{02155}\\
+{\LARGE Jeremiah M. Via}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
-  Telephone: \texttt{(781) 960-5151}\\
-  Email: \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\
+  \begin{tabular}[h]{ll}
+  \Phone{}    & \texttt{(781) 960-5151}\\
+  \Envelope{} & \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\    
+  \github{}   & \href{http://www.github.com/jvia}{github.com/jvia}
+  \end{tabular}
   % \textsc{url}: \href{http://jeremiahvia.com}{http://jeremiahvia.com}
 \end{minipage}
 
@@ -83,39 +91,55 @@ pdfproducer={http://jeremiahvia.com}
 \textbf{MSc in Computer Science \& Cognitive Science} (expected)\\
 \textsl{Tufts University}, USA\\
 \small{\textsc{Advisor:} Matthias Scheutz
-\vspace{.25cm}
+\vspace{.15cm}
 
 \years{2012}
 \textbf{BSc in Artificial Intelligence \& Computer Science} (First Class Honours)\\
 \textsl{University of Birmingham}, United Kingdom\\
 \small{\textsc{Dissertation:} A Data-Driven Self-Awareness Model for Robotics Systems}\\
 \small{\textsc{Advisor:} Nick Hawes
-\vspace{.25cm}
+\vspace{.15cm}
 
 \years{2009}
 \textbf{AS in Computer Programming} (3.83 GPA)\\
-\textit{Grossmont College}, USA\\
+\textit{Grossmont College}, USA
 
 %% ------------------------------------------------------------------%%
 %% Appointments                                                      %%
 %% ------------------------------------------------------------------%%
 \section*{Work Experience}
-\years{2011}
-\textbf{Universität Bielefeld}, \textsl{Research Institute for Cognition and Robotics}\\
-Summer Research Intern\\[.2cm]
-Worked with a PhD student to incorporate a data-driven fault-detection algorithm into the CoSy Architecture Schema Toolkit (CAST).\\[.2cm]
-\textbf{University of Birmingham}, \textsl{Intelligent Robotics Lab}\\
-Summer Research Intern\\[.2cm]
-Performed experiments on robots running CAST in order to determine the efficacy of a data-driven fault-detection algorithm on event-based systems. Results were then used to improve the algorithm.\\[.25cm]
+\years{2012--2013}
+\textbf{Tufts University}, \textsl{Human Robot Interaction Lab}
+
 \years{2012}
 \textbf{University of Birmingham}, \textsl{Robot Programming}\\
 Teaching Assistant
 
+\years{2011}
+\textbf{Universität Bielefeld}, \textsl{Research Institute for Cognition and Robotics}\\
+Summer Research Intern\\
+Incorporated a data-driven fault-detection algorithm into the CoSy
+Architecture Schema Toolkit (CAST).
+
+%% ------------------------------------------------------------------%%
+%% IT & Programming Skills                                           %%
+%% ------------------------------------------------------------------%%
+\section*{IT \& Programming Skills}
+
+
+
+Programming languages (Java, Common Lisp, Prolog, C/C++).\\
+Scripting languages (Python, shell).\\
+Markup languages (HTML, CSS, XML, YAML, JSON).\\
+Query languages (SQL).\\
+Data analysis (Matlab).\\
+Revision control (Git, Subversion).\\
+Digital typesetting (\TeX, \LaTeX, \XeTeX).
 
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
 %% ------------------------------------------------------------------%%
-\section*{Grants \& Awards}
+\section*{Awards}
 \years{2012}
 Provost Fellowship, Tufts University\\
 Best Final Year Computer Science Student\\
@@ -131,36 +155,9 @@ British Computing Society Tammal Hussein Memorial Prize\\
 School of Computer Science Excellency Scholarship\\
 \years{2009}
 Best First Year Computer Science Student\\
-School of Computer Science Excellency Scholarship\\
-% President's List (4.0 GPA)\\
-% \years{2008}
-% Vice-President's List (3.5+ GPA)\\
-% Vice-President's List (3.5+ GPA)\\
-% \years{2007}
-% Vice-President's List (3.5+ GPA)
+School of Computer Science Excellency Scholarship
 
-%% ------------------------------------------------------------------%%
-%% Activities                                                        %%
-%% ------------------------------------------------------------------%%
-\section*{Activities}
-\years{2010--2012}\textbf{Birmingham Autonomous Robot Club}\\[.2cm]
-Founded the robot club in my second year as a way to get interested
-students and academics working together to make intelligent robots. It
-was immensely fun and we were able to show off our robots at school
-events. I have programming experience with the B21, Pioneer 3DX,
-Pioneer 1, Nao, and iRobot Create.
 
-%% ------------------------------------------------------------------%%
-%% IT & Programming Skills                                           %%
-%% ------------------------------------------------------------------%%
-\section*{IT \& Programming Skills}
-Programming languages (Java, Common Lisp, Prolog, C/C++).\\
-Scripting languages (Python, shell).\\
-Markup languages (HTML, CSS, XML, YAML, JSON).\\
-Query languages (SQL).\\
-Data analysis (Matlab).\\
-Revision control (Git, Subversion).\\
-Digital typesetting (\TeX, \LaTeX, \XeTeX).
 
 %% ------------------------------------------------------------------%%
 %% Languages                                                         %%
@@ -172,12 +169,7 @@ Digital typesetting (\TeX, \LaTeX, \XeTeX).
 %% ------------------------------------------------------------------%%
 %% Recent Invited Talks                                              %%
 %% ------------------------------------------------------------------%%
-\section*{Talks}
-Data-Driven Anomaly Detection. \textit{Intelligent Robotics Lab, University
-of Birmingham}. November, 2011.\\
-
-Café Scientifique: The Brain of AI. \textit{Brain Awareness Week, University of Birmingham}.
-March, 2012.
+\section*{Interests}
 
 
 %% ------------------------------------------------------------------%%
