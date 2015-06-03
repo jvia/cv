@@ -12,8 +12,9 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage{libertine}
 \defaultfontfeatures{Mapping=tex-text}
-\setromanfont{Linux Libertine O}
+\setromanfont{Linux Libertine}
 % \setmonofont[Scale=0.8]{Monaco}
 
 % Layout
@@ -21,7 +22,8 @@
 \geometry{textwidth=6in, textheight=9.5in, marginparsep=7pt, marginparwidth=.5in}
 \setlength\parindent{0in}
 \usepackage{setspace}
-\singlespacing
+\spacing{0.75}
+%\singlespacing
 
 % Links
 \chardef\&="E050
@@ -78,11 +80,60 @@ pdfproducer={http://jeremiahvia.com}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
   \begin{tabular}[h]{ll}
-    \Phone{}    & \texttt{(781) 960-5151}\\
+    \Phone{}    & \texttt{(415) 290-3362}\\
     \Envelope{} & \href{mailto:jeremiah.via@gmail.com}{jeremiah.via@gmail.com}\\    
     \github{}   & \href{http://www.github.com/jvia}{github.com/jvia}
   \end{tabular}
 \end{minipage}
+
+%% ------------------------------------------------------------------%%
+%% Work Experience                                                   %%
+%% ------------------------------------------------------------------%%
+\section*{Work Experience}
+\years{2014--2015}
+\textbf{Software Engineer}, \textsl{Apple}
+\begin{itemize*}
+\item Maintained a library that analyzes test data from a cluster of
+  iOS and OS X devices
+\item Reduced memory consumption of analytics to a fraction of the
+  original value by utilizing lazy loading and multiprocessing
+\item Created a web app for an Apple CI system that tracks the results of
+  each commit to a project and presents analyzed results to end users
+\item Part of a team that created an auto-triage system that analyzes
+  logs to triage errors, presenting unknowns to QA
+\item This auto-triage system learns from how QA classifies errors,
+  using this information to classify future errors
+\end{itemize*}
+
+\years{2012--2014}
+\textbf{Graduate Research Assistant}, \textsl{Human Robot Interaction Lab, Tufts University}
+\begin{itemize*}
+\item Developed code in Clojure to generate software components
+  allowing bidirectional communication between the ROS and ADE
+  middlewares
+\item Improved low-level feature extractor by enabling introspection
+  on its current context
+\item Part of team to implement learning by demonstration on PR2 and
+  Xitome MDS robots
+\end{itemize*}
+
+\years{2012}
+\textbf{Teaching Assistant}, \textsl{Robot Programming, University of Birmingham}
+\begin{itemize*}
+\item Explained concepts to help students develop localization and
+  navigation algorithms
+\item Showed students how to debug remote and low-level hardware
+\end{itemize*}
+
+\years{2011}
+\textbf{Research Assistant}, \textsl{Research Institute for Cognition and Robotics, Universität Bielefeld}
+\begin{itemize*}
+\item Extended a data-driven fault detection system to work on the
+  CAST robotics middleware
+\item Optimized the learning model and algorithm to become more space
+  and time efficient without loss of power
+\end{itemize*}
+
 
 %% ------------------------------------------------------------------%%
 %% Education                                                         %%
@@ -90,57 +141,25 @@ pdfproducer={http://jeremiahvia.com}
 \section*{Education}
 
 \years{2012--2014}
-\textbf{MSc in Computer Science \& Cognitive Science} (expected)\\
+\textbf{MSc in Computer Science \& Cognitive Science}\\
 \textsl{Tufts University}, USA
 
 \years{2009--2012}
 \textbf{BSc in Artificial Intelligence \& Computer Science}, First Class Honours\\
 \textsl{University of Birmingham}, United Kingdom
 
-\years{2007--2009}
-\textbf{AS in Computer Programming} (3.83 GPA)\\
-\textit{Grossmont College}, USA
-
-%% ------------------------------------------------------------------%%
-%% Work Experience                                                   %%
-%% ------------------------------------------------------------------%%
-\section*{Work Experience}
-\years{2012--2013}
-\textbf{Graduate Research Assistant}, \textsl{Human Robot Interaction Lab, Tufts University}
-\begin{itemize*}
-\item Developed code in Clojure to automatically generated software
-  components to allow bidirectional communication between the ROS and
-  ADE middlewares
-\item Improved low-level feature extractor by enabling introspection on its current context
-\item Developing architecture wide fault-tolerant mechanisms
-\item Deployed code to run on actual robots
-\item Lead developer on the Willow Garage PR2 and the VGo telepresence robots
-\item Part of a team to develop learning by demonstration on a robot
-\end{itemize*}
-
-\years{2012}
-\textbf{Teaching Assistant}, \textsl{Robot Programming, University of Birmingham}
-\begin{itemize*}
-\item Explained concepts to help students develop localization and navigation algorithms
-\item Showed students how to debug remote and low-level hardware
-\end{itemize*}
-
-\years{2011}
-\textbf{Research Assistant}, \textsl{Research Institute for Cognition and Robotics, Universität Bielefeld}
-\begin{itemize*}
-\item Extended a data-driven fault detection system to work on the CAST robotics middleware
-\item Modified learning model and algorithm to become more space and time efficient without loss in fault detection power
-\end{itemize*}
-
 %% ------------------------------------------------------------------%%
 %% Technical Skills                                                  %%
 %% ------------------------------------------------------------------%%
 \section*{Technical Skills}
-\begin{itemize*}
-  \item[] \textbf{Languages}: Java, C, Clojure, Prolog, Python
-  \item[] \textbf{Tools}: Emacs, Git, Subversion, \LaTeX
-  \item[] \textbf{Platforms}: Linux/Unix, Mac OS X, ROS, ADE
-\end{itemize*}
+\textbf{Languages}: Python, Clojure, Java, C, Prolog, PostgreSQL   \\
+\textbf{Tools}: Emacs, Git, ElasticSearch, \LaTeX           \\
+\textbf{Platforms}: Linux/Unix, iOS/OS X, ROS, ADE 
+%% \begin{itemize*}
+%%   \item[] \textbf{Languages}: Java, C, Clojure, Prolog, Python
+%%   \item[] \textbf{Tools}: Emacs, Git, Subversion, \LaTeX
+%%   \item[] \textbf{Platforms}: Linux/Unix, Mac OS X, ROS, ADE
+%% \end{itemize*}
  
 %% ------------------------------------------------------------------%%
 %% Grants and Awards                                                 %%
@@ -160,9 +179,8 @@ British Computing Society Tammal Hussein Memorial Prize
 %% ------------------------------------------------------------------%%
 \section*{Interests}
 I genuinely enjoy learning about new technical concepts, particularly
-in robotics and programming. Outside of technology, I enjoy getting
-outside and doing physical activities. I am a competitive powerlifter
-and I enjoy riding bikes.
+in programming. Outside of technology, I enjoy doing physical
+activities. From time to time, I complete in powerlifting.
 
 %% ------------------------------------------------------------------%%
 %% Creative Commons Attribution                                      %%
